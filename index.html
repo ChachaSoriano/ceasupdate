@@ -33,8 +33,8 @@
  <img src="images/header1.png" style="display: block;" width="100%" />
 </div>
 	<div data-role="content" align="center" >
-	<img src="images/cap.png" width="100%" style="margin-top:-5%">
-	
+	<img src="images/cap.png" width="100%" style="margin-top:-3%">
+	<br />
 	<a href="#vision" data-transition="pop"><img src="images/vmg.png" width="28%"></a>
 	<a href="#admission" data-transition="pop"><img src="images/admission.png" width="28%"></a>
 	<a href="#course" data-transition="pop"><img src="images/courses.png" width="28%"></a>
@@ -53,8 +53,8 @@
 </div>
 <div data-role="content" align="center">
 <img src="images/cap1.png" width="90%" /><br /><br />
-	<a href="student/index.html"><img src="images/student.png" width="40%"></a>
-	<a href="faculty/index.html"><img src="images/faculty.png" width="40%"></a>
+	<a href="http://gordoncollegeceas.16mb.com/phpmobile/student/index.php"><img src="images/student.png" width="40%"></a>
+	<a href="http://gordoncollegeceas.16mb.com/phpmobile/faculty/index.php"><img src="images/faculty.png" width="40%"></a>
 </div>
 	<div data-role="footer" data-position="fixed" data-theme="f">
 	<div data-role="navbar">
@@ -116,7 +116,7 @@
 		<ul>
 		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
 		<li><a href="#mission" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
-		<li><a href="#goals2" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		
 		</ul>
 	</div>
 	</div>
@@ -257,7 +257,7 @@
 	<div data-role="navbar">
 		<ul>
 		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
-		<li><a href="#examreq" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		<li><a href="#admission" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
 		<li><a href="#enpro" data-icon="carat-r" data-transition="slidefade">Next</a></li>
 		</ul>
 	</div>
@@ -276,24 +276,6 @@
 		<ul>
 		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
 		<li><a href="#enreq" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
-		<li><a href="#enpro2" data-icon="carat-r" data-transition="slidefade">Next</a></li>
-		</ul>
-	</div>
-	</div>
-</div>
-
-<div data-role="page" id="enpro2" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
-<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
- <img src="images/header1.png" style="display: block;" width="100%" />
-</div>
-<div data-role="content">
-	<img src="images/enpro2.png" width="100%" />
-</div>
-	<div data-role="footer" data-position="fixed" data-theme="f">
-	<div data-role="navbar">
-		<ul>
-		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
-		<li><a href="#enpro" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
 		</ul>
 	</div>
 	</div>
@@ -374,12 +356,6 @@ $("#vision").on("swipeleft",function(){
 });
 $("#mission").on("swipeleft",function(){
 	$.mobile.changePage( $("#goals"), { transition: "slide"} );
-});
-$("#goals").on("swipeleft",function(){
-	$.mobile.changePage( $("#goals2"), { transition: "slide"} );
-});
-$("#goals2").on("swiperight",function(){
-	$.mobile.changePage( $("#goals"), { transition: "slide", reverse:"true"} );
 });
 $("#goals").on("swiperight",function(){
 	$.mobile.changePage( $("#mission"), { transition: "slide", reverse:"true"} );

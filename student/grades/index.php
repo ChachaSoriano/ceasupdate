@@ -141,24 +141,21 @@ vertical-align:top;
 				<div class="center" style="font-size:18px; position: center">COLLEGE OF EDUCATION, ARTS AND SCIENCES</div>
 				<div class="center" style="font-size:18px;"> STUDENT</div>
 			</div>
-			<div class="menu">
-				<ul>
-					<li><a href="../grades">GRADES</a></li>
-					<li><a href="../logout.php">LOGOUT</a></li>
-				</ul>
-			</div>
 		</div>
 	</div>
+
 
 	<div class="title">
 		<div class="wraper">
 			<div class="left" style="font-size:15px"><?php echo $_SESSION['student'].' - '.student($_SESSION['student'],"lastname").", ".student($_SESSION['student'],"firstname").", ".student($_SESSION['student'],"middlename")." - ".student($_SESSION['student'],"course")." ".student($_SESSION['student'],"year"); ?></div>
+		
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="../logout.php">LOGOUT</a>
+				
 		</div>
 	</div>
 
 	<div class="page-content"><table id="grid"></table></div>
-	<div class="footer"><p class="copy">&copy; Copyright 2014<span>|</span>Gordon College CEAS | Team Cache</p>
-        <div class="cl">&nbsp;</div>
-		</div>
+	
 </body>
 </html>

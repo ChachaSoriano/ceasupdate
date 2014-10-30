@@ -1,4 +1,4 @@
-<?php include '../../../config.php' ?>
+<?php include '../../../../config.php' ?>
 <?php
 	header("Content-type: text/x-json");
 	

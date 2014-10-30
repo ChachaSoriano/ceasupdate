@@ -105,17 +105,15 @@
 </head>
 <body>
 <div data-role="page" id="index" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
-<div data-role="header" data-theme="b"  align="center" data-position="fixed" style="background-color:#085dad">
- <img src="images/header1.png" width="95%">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="fixed" style="background-color:#085dad">
+ <img src="images/header1.png" style="margin: auto; display: block;" width="100%" />
 </div>
 		<div class="page-content" align="center" style="color:#fff;">
 		<br />
-		<img src="images/cap1.png" width="90%">
-			<div id="login-form"><br />
-				<h2 style="color:#000033">FACULTY LOGIN</h2>
-				<br />
-					<div style="font-size:15px; color:#000033">Username:</div>
-					<div><select id="list-instructors" data-theme="c">
+		<img src="images/faculty.png" width="50%">
+			<div id="login-form" >
+					<div style="font-size:15px; color:#000033"></div>
+					<div class="ui-btn ui-icon-user ui-btn-icon-left"><select id="list-instructors" data-theme="c">
 							<option>Select Your Account</option>
 							<?php
 							function list_instructors(){
@@ -129,9 +127,10 @@
 							list_instructors();
 							?>
 						</select>
-					</div><br />
-					<div style="font-size:15px; color:#000033"><span class="inline">Password:</span><input type="password" class="txt" id="password" placeholder="Enter your Password" style="font-size:16px;" data-theme="g"></div>
+					</div>
+					<div class="ui-btn ui-icon-lock ui-btn-icon-left" style="font-size:15px; color:#000033"><span class="inline"></span><input type="password" class="txt" id="password" placeholder="Enter your Password" style="font-size:16px;" data-theme="g"></div>
 					<button id="login" data-theme="a">Login</button>
+					<a href="index.html" data-role="button" id="index" data-theme="a">Home</a>
 
 			</div>
 		</div>

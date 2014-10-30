@@ -28,28 +28,26 @@
 	<script type="text/javascript" src="../source/scripts/js.js"></script>
 	<script type="text/javascript" src="../source/scripts/ui.js"></script>
 	<script type="text/javascript" src="functions/script.js"></script>
-
+	
 </head>
 <body>
 <div data-role="page" id="index" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
-<div data-role="header" data-theme="b"  align="center" data-position="fixed" style="background-color:#085dad">
- <img src="images/header1.png" width="95%">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="fixed" style="background-color:#085dad">
+ <img src="images/header1.png" style="margin: auto; display: block;" width="100%" />
 </div>
 	<div class="page-content" align="center" style="color:#000033;">
 	<br />
-	<img src="images/cap1.png" width="90%">
+	<img src="images/student.png" width="50%">
 			<div id="login-form">
-				<h3>STUDENT LOGIN</h3>
 				<div>
 					<div class="login-error" style="color:red;"></div>
 				</div>
-				
-				<div><span class="inline">Student Number: </span><input type="text" class="txt" id="username" maxlength="9" placeholder="Enter your Student Number" data-theme="g">
+				<div class="ui-btn ui-icon-user ui-btn-icon-left"><span class="inline"></span><input type="text" class="txt" id="username" maxlength="9" placeholder="Enter your Student Number" data-theme="g">
 				</div>
-				<br />
-				<div><span class="inline">Password: </span><input type="password" class="txt" id="password" placeholder="Enter your Password" data-theme="g">
+				<div class="ui-btn ui-icon-lock ui-btn-icon-left"><span class="inline"></span><input type="password" class="txt" id="password" placeholder="Enter your Password" data-theme="g">
 				</div>
 				<button id="login" data-theme="a">Login</button>
+		
 				</div>
 		</div>
 	</div>

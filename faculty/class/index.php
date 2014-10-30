@@ -202,32 +202,24 @@ vertical-align:top;
 	
 </head>
 <body >
-	<div class="head" >
-		<div class="wraper" >
+	<div class="head">
+		<div class="wraper">
 			<div class="head-logo1"></div>
 			<div class="head-logo"></div>
 			<div class="head-label">
 				<div class="center" style="font-size:18px; position: center">COLLEGE OF EDUCATION, ARTS AND SCIENCES</div>
-				<div class="center" style="font-size:18px;"> FACULTY</div>
-			</div>
-			<div class="menu">
-				<ul>
-					<?php
-						$pos = explode(' ',faculty($_SESSION['faculty'],'position'));
-							if($pos[0]=="BSIT" or $pos[0]=="BSCS" or $pos[0]=="ACT"){
-							echo '<li><a href="../enlistment">ENLISTMENT</a></li>';
-							}
-					?>
-					<li><a href="../logout.php">LOGOUT</a></li>
-				</ul>
+				<div class="center" style="font-size:18px;"> STUDENT</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="title">
 		<div class="wraper">
-			<div class="center" style="font-size:15px"><?php echo $_SESSION['faculty'] ?> - <?php echo faculty($_SESSION['faculty'],'lastname').', '.faculty($_SESSION['faculty'],'firstname').' '.faculty($_SESSION['faculty'],'middlename').' - '.faculty($_SESSION['faculty'],'position') ?></div>
-		</div>
+			<div class="left" style="font-size:15px"><?php echo $_SESSION['faculty'] ?> - <?php echo faculty($_SESSION['faculty'],'lastname').', '.faculty($_SESSION['faculty'],'firstname').' '.faculty($_SESSION['faculty'],'middlename').' - '.faculty($_SESSION['faculty'],'position') ?></div>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="../logout.php">LOGOUT</a>
+				
+			</div>
 	</div>
 
 	<div class="page-content">
@@ -236,9 +228,6 @@ vertical-align:top;
 		<table id="grid"></table>
 	</div>
 	
-	<div class="footer">
-	<p class="copy">&copy; Copyright 2014<span>|</span>Gordon College CEAS | Team Cache</p>
-        <div class="cl">&nbsp;</div>
-	</div>
+	
 </body>
 </html>

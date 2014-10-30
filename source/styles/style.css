@@ -1,12 +1,12 @@
 	/* Turn on a 13x13 scrollbar */
 	::-webkit-scrollbar {
-		width: 13px;
-		height: 13px;
+		width: 100%;
+		height: 100%;
 	}
 
 	::-webkit-scrollbar-button:vertical {
 		background-color: silver;
-		border: 1px solid gray;
+		border: 1% solid gray;
 	}
 
 	/* Turn on single button up on top, and down on bottom */
@@ -43,17 +43,17 @@
 
 	::-webkit-scrollbar-track:vertical {
 		background-color: blue;
-		border: 1px dashed pink;
+		border: 1% dashed pink;
 	}
 
 	/* Top area above thumb and below up button */
 	::-webkit-scrollbar-track-piece:vertical:start {
-		border: 0px;
+		border: 0%;
 	}
 
 	/* Bottom area below thumb and down button */
 	::-webkit-scrollbar-track-piece:vertical:end {
-		border: 0px;
+		border: 0%;
 	}
 
 	/* Track below and above */
@@ -63,13 +63,13 @@
 
 	/* The thumb itself */
 	::-webkit-scrollbar-thumb:vertical {
-		height: 50px;
+		height: 50%;
 		background-color: gray;
 	}
 
 	/* The thumb itself */
 	::-webkit-scrollbar-thumb:horizontal {
-		height: 50px;
+		height: 50%;
 		background-color: gray;
 	}
 
@@ -85,16 +85,16 @@
 
 	
 	.ftitle {
-		font-size:20px;
-		padding-left:20px !important;
+		font-size:20%;
+		padding-left:20% !important;
 	}
 	
 	.ftitle.a{
-		font-size:20px;
+		font-size:20%;
 	}
 	
 	.ftitle span{
-		font-size:15px;
+		font-size:15%;
 		font-style: italic;
 		font-weight:normal;
 		text-decoration: underline;
@@ -102,15 +102,15 @@
 	}
 	
 	.classLink ,.trSelected  td div .classLink{
-		font-size:11px;
+		font-size:11%;
 		color:blue;
 	}
 	
 	.btndelete {
 		background:url(../images/delete.png);
 		background-size:100% 100%;
-		width:5px;
-		height:5px;
+		width:5%;
+		height:5%;
 		display:inline-block;
 	}
 	div.overlay {
@@ -118,28 +118,28 @@
 		height:100%;
 		background:url(../images/black.png);
 		position:fixed;
-		top:0px;
-		left:0px;
+		top:0%;
+		left:0%;
 	}
 	
 	div.loading {
-		width:126px;
-		height:12px;
+		width:126%;
+		height:12%;
 		background:url(../images/loading.gif);
 		position:fixed;
-		top:100%;
+		top:100%;	
 		left:100%;
-		margin-top:-13px;
-		margin-left:-126px;
+		margin-top:-13%;
+		margin-left:-126%;
 	}
 
 	* {
-		padding:0px;
-		margin:0px;
-		font-size:12px;
+		padding:0%;
+		margin:0%;
+		font-size:12%;
 	}
 	.normal {
-		font-size:14px;
+		font-size:14%;
 	}
 	
 	body {
@@ -163,23 +163,23 @@
 	}
 
 	.cell {
-		border-top:1px solid gray;
-		border-right:1px solid gray;
+		border-top:1% solid gray;
+		border-right:1% solid gray;
 		text-align:center;
-		padding-top:2px;
+		padding-top:2%;
 	}
 
 	.cel {
-		border-top:1px solid gray;
+		border-top:1% solid gray;
 		text-align:center;
-		padding-top:2px;
+		padding-top:2%;
 	}
 
-	.btn {background:#147fe3; min-width:100px; height:auto; border:2px solid gray; text-align:center; border-radius:2px; margin-left:5px; padding:3px; color:#c7c7c7; margin-right:5px; -webkit-user-select:none; -moz-user-select:none; padding-left:5px; padding-right:5px; font-size:15px;}
+	.btn {background:#147fe3; min-width:100%; height:auto; border:2% solid gray; text-align:center; border-radius:2%; margin-left:5%; padding:3%; color:#c7c7c7; margin-right:5%; -webkit-user-select:none; -moz-user-select:none; padding-left:5%; padding-right:5%; font-size:15%;}
 
 	th {
-		padding-top:3px;
-		padding-bottom:2px;
+		padding-top:3%;
+		padding-bottom:2%;
 		font-weight:bold;
 	}
 
@@ -195,94 +195,95 @@
 	}
 	
 	h1 {
-		font-size:20px;
+		font-size:20%;
 	}
 
-	.head {
-		height:110px;
+	/*.head {
+		height:100%;
 		background:url(../images/head.png);
-		border-bottom:1px solid #bbbaba;
-		width:1080px;
+		border-bottom:1% solid #bbbaba;
+		width:100%;
 		margin:auto;
-		top:0px;
+		top:0%;
 		-webkit-user-select:none;
 		-webkit-user-select:none;
-	}
+	}*/
 
 	.wraper {
-		width:1000px;
+		width:100%;
 		margin:auto;
-		padding-top:20px;
-		padding-bottom:15px;
+		padding-top:20%;
+		padding-bottom:15%;
 		
 	}
 
-	.head.wraper {
-		width:1000px;
+	/*.head.wraper {
+		width:100%;
 		margin:auto;
 		position: center;
-	}
+	}*/
 
 
-	.head-logo {
-		width:90px;
-		height:90px;
+	/*.head-logo {
+		width:90%;
+		height:90%;
 		background:url(../images/ceaslogo.png);
 		background-size:100%;
-		margin-top:-5px;
+		margin-top:-5%;
 		float:right;
 	}
 
 	
-	.head-label {
+	/*.head-label {
 		float:center;
-		padding-left:1px;
-		padding-top:1px;
+		padding-left:1%;
+		padding-top:1%;
 		color:white;
-		text-shadow:1px 1px 3px black;
+		text-shadow:1% 1% 3% black;
 		
 	}
 
 	.head-logo1 {
-		width:90px;
-		height:90px;
+		width:90%;
+		height:90%;
 		background:url(../images/gc.png);
 		background-size:100%;
-		margin-top:-5px;
+		margin-top:-5%;
 		float:left;
-	}
+	}*/
 	
 	.menu {
 		float:left;
-		padding-top:10px;
-		font-size:20px;
+		padding-top:10%;
+		font-size:20%;
 	}
 	
 	.title {
-		top:101px;
-		height:50px;
+		top:100%;
+		height:50%;
 		background:url(../images/gray.png);
-		width:1080px;
+		width:100%;
 		margin:auto;
 		
 	}
 	.footer {
-		height:30px;
+		height:30%;
 		background:url(../images/wbg.gif);
-		width:1080px;
+		width:100%;
 		margin:auto;
 		
 	}
 	div.title div.wraper {
 		color:black;
-		text-shadow: 1px 1px 1px white;
+		width:100%;
+		text-shadow: 1% 1% 1% white;
 	
 	}
 	
 	li {
 		display:inline-block;
 		list-style-type:none;
-		margin-left:10px;
+		margin-left:10%;
 		
 	}
 
@@ -290,7 +291,7 @@
 		text-decoration:underline;
 		color:white;
 		cursor:pointer;
-		font-size:18px;
+		font-size:18%;
 	}
 	a:visited {
 		text-decoration:none;
@@ -302,7 +303,7 @@
 	}
 	
 	.page-content {
-		width:1080px;
+		width:1080%;
 		margin:auto;
 		background:black;
 	}
